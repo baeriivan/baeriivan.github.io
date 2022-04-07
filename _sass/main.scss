@@ -101,6 +101,10 @@ a {
 
   a {
     padding: 0.25em;
+
+    &:hover {
+      color: $primaryColor;
+    }
   }
 }
 
