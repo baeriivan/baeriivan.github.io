@@ -7,6 +7,9 @@ $totalWidth: 70%;
 $sideMargin: (100%-$totalWidth)/2;
 $topMargin: 2em;
 
+$brd: 1px solid  #ccc;
+// $brd: none;
+
 
 body {
   background: $bgColorPrimary;
@@ -43,17 +46,27 @@ a {
 }
 
 .about-overview {
+  justify-items: center;
 
   img {
     width: 18em;
+
+    // center
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  #about-me {
+  #about-name {
+    display:flex;
+    justify-content: center;
     color: $bodyColor;
+    padding: 0.5em;
   }
 
   #about-titles {
     display: flex;
+    justify-content: center;
     color: $linkColor
   }
 }
@@ -70,13 +83,25 @@ a {
   padding: 1.25em;
   margin-bottom: .5em;
 
-  border: 1px solid  #ccc;
+  border: $brd;
 }
 
 .about-content {
   padding: 1.25em;
 
-  border: 1px solid  #ccc;
+  border: $brd;
+}
+
+.social {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  a {
+    padding: 0.25em;
+  }
 }
 
 
