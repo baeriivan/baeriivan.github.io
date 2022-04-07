@@ -28,18 +28,26 @@ body {
   color: var(--text-color);
   font-family: $bodyFont;
 
+  display: inline-grid;
   margin: $topMargin $sideMargin;
   width: $totalWidth;
 }
 
 footer {
   border-top: 1px solid var(--bg-color-secondary);
+  padding-top: 1em;
+
   font-size: .8em;
+
+  div {
+    text-align: center;
+  }
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid var(--bg-color-secondary);
 }
 
 nav ul, footer ul {
