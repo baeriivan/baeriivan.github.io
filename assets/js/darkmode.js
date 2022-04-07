@@ -27,11 +27,9 @@ function switchTheme() {
 function setDark() {
     html.dataset.theme = DARK;
     localStorage.setItem('data-theme', DARK);
-    console.log(DARK);
 }
 
 function setLight() {
     html.dataset.theme = LIGHT;
     localStorage.setItem('data-theme', LIGHT);
-    console.log(LIGHT);
 }
