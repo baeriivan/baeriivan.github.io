@@ -13,7 +13,7 @@
 :root[data-theme="light-theme"] .light--hidden { display: none; }
 :root[data-theme="dark-theme"]  .dark--hidden { display: none; }
 
-
+$theme-icon-color: #d9ea77;
 $bodyFont: 'Helvetica', 'Arial', 'Sans-Serif';
 $totalWidth: 70%;
 $sideMargin: (100%-$totalWidth)/2;
@@ -138,6 +138,11 @@ a {
   }
 }
 
+.theme-icon {
+  i:hover {
+    color: $theme-icon-color;
+  }
+}
 
 @media screen and (min-width: 72em ) {
 
