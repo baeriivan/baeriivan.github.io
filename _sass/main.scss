@@ -1,0 +1,99 @@
+$bgColorPrimary: #ffffff;
+$bgColorSecondary: #d5d5d5;
+$bodyColor: #333;
+$linkColor: #999;
+$bodyFont: 'Helvetica', 'Arial', 'Sans-Serif';
+$totalWidth: 70%;
+$sideMargin: (100%-$totalWidth)/2;
+$topMargin: 2em;
+
+
+body {
+  background: $bgColorPrimary;
+  color: $bodyColor;
+  font-family: $bodyFont;
+
+  margin: $topMargin $sideMargin;
+  width: $totalWidth;
+}
+
+footer {
+  border-top: 1px solid $bgColorSecondary;
+  font-size: .8em;
+}
+
+nav ul, footer ul {
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+
+    li {
+      display: inline;
+      margin-right: 20px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $linkColor;
+
+    &:hover {
+      text-decoration: underline;
+    }
+}
+
+.about-overview {
+
+  img {
+    width: 18em;
+  }
+
+  #about-me {
+    color: $bodyColor;
+  }
+
+  #about-titles {
+    display: flex;
+    color: $linkColor
+  }
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.container {
+  position: relative; margin: .5em;
+}
+
+.about-overview { 
+  padding: 1.25em;
+  margin-bottom: .5em;
+
+  border: 1px solid  #ccc;
+}
+
+.about-content {
+  padding: 1.25em;
+
+  border: 1px solid  #ccc;
+}
+
+
+@media screen and (min-width: 72em ) {
+
+	.container { 
+		float: left;
+	}
+
+  .about-overview { 
+    width: 22.75em;
+    margin-right: -25.3em;
+    float: left;
+  }
+
+	.about-content { 
+    margin-left: 24em;
+    float: left;
+  }   
+}

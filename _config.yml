@@ -1,0 +1,13 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "" # the name of your site, e.g. ACME Corp.
+
+email: baeriivan@gmail.com
+# markdown: kramdown
+# permalink: /post/:year/:month/:day/:title
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# github_username:  baeriivan
+
+# plugins:
+#   - jekyll-feed
+#   - jekyll-sass-converter
