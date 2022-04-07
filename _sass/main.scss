@@ -1,7 +1,17 @@
-$bgColorPrimary: #ffffff;
-$bgColorSecondary: #d5d5d5;
-$bodyColor: #333;
-$linkColor: #999;
+:root[data-theme="light-theme"] {
+    --bg-color-primary: #ffffff;
+    --bg-color-secondary: #d5d5d5;
+    --text-color: #333333;
+    --link-color: #999999;
+}
+:root[data-theme="dark-theme"] {
+    --bg-color-primary: #333333;
+    --bg-color-secondary: #555555;
+    --text-color: #ffffff;
+    --link-color: #bbbbbb;
+}
+
+
 $bodyFont: 'Helvetica', 'Arial', 'Sans-Serif';
 $totalWidth: 70%;
 $sideMargin: (100%-$totalWidth)/2;
@@ -12,8 +22,8 @@ $brd: 1px solid  #ccc;
 
 
 body {
-  background: $bgColorPrimary;
-  color: $bodyColor;
+  background: var(--bg-color-primary);
+  color: var(--text-color);
   font-family: $bodyFont;
 
   margin: $topMargin $sideMargin;
@@ -21,7 +31,7 @@ body {
 }
 
 footer {
-  border-top: 1px solid $bgColorSecondary;
+  border-top: 1px solid var(--bg-color-secondary);
   font-size: .8em;
 }
 
@@ -38,7 +48,7 @@ nav ul, footer ul {
 
 a {
     text-decoration: none;
-    color: $linkColor;
+    color: var(--link-color);
 
     &:hover {
       text-decoration: underline;
@@ -60,14 +70,14 @@ a {
   #about-name {
     display:flex;
     justify-content: center;
-    color: $bodyColor;
+    color: var(--text-color);
     padding: 0.5em;
   }
 
   #about-titles {
     display: flex;
     justify-content: center;
-    color: $linkColor
+    color: var(--link-color)
   }
 }
 
@@ -103,7 +113,7 @@ a {
     padding: 0.25em;
 
     &:hover {
-      color: $primaryColor;
+      color: var(--bg-color-primary);
     }
   }
 }
