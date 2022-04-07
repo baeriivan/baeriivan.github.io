@@ -1,21 +1,37 @@
 const html = document.querySelector('html');
 const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-if (userPrefersDark) {
-    html.dataset.theme = `dark-theme`;
+const DARK = "dark-theme";
+const LIGHT = "light-theme";
+
+if (localStorage.getItem('data-theme') === DARK ||
+    (userPrefersDark && !localStorage.getItem('data-theme'))) {
+    setDark();
 } else {
-    html.dataset.theme = `light-theme`;
+    setLight();
 }
 
 function switchTheme() {
     switch (html.dataset.theme) {
-        case `dark-theme`:
-            html.dataset.theme = `light-theme`;
+        case DARK:
+            setLight();
             break;
-        case `light-theme`:
-            html.dataset.theme = `dark-theme`;
+        case LIGHT:
+            setDark();
             break;
         default:
             break;
     }
+}
+
+function setDark() {
+    html.dataset.theme = DARK;
+    localStorage.setItem('data-theme', DARK);
+    console.log(DARK);
+}
+
+function setLight() {
+    html.dataset.theme = LIGHT;
+    localStorage.setItem('data-theme', LIGHT);
+    console.log(LIGHT);
 }
