@@ -7,6 +7,15 @@ if (userPrefersDark) {
     html.dataset.theme = `light-theme`;
 }
 
-function switchTheme(theme) {
-    html.dataset.theme = `${theme}-theme`;
+function switchTheme() {
+    switch (html.dataset.theme) {
+        case `dark-theme`:
+            html.dataset.theme = `light-theme`;
+            break;
+        case `light-theme`:
+            html.dataset.theme = `dark-theme`;
+            break;
+        default:
+            break;
+    }
 }

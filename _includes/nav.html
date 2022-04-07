@@ -5,6 +5,14 @@
 		<!-- <li><a href="/cv">CV</a></li> -->
 		<li><a href="/posts">Posts</a></li>
 	</ul>
-		<button onclick="switchTheme('dark')">Dark</button>
-		<button onclick="switchTheme('light')">Light</button>
+	<ul class="theme-swap">
+		<li>
+			<a class="dark--hidden" onclick="switchTheme()">
+				<i class="fa-solid fa-moon"></i>
+			</a>
+			<a class="light--hidden" onclick="switchTheme()">
+				<i class="fa-solid fa-sun"></i>
+			</a>
+		</li>
+	</ul>
 </nav>

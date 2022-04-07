@@ -10,6 +10,8 @@
     --text-color: #ffffff;
     --link-color: #bbbbbb;
 }
+:root[data-theme="light-theme"] .light--hidden { display: none; }
+:root[data-theme="dark-theme"]  .dark--hidden { display: none; }
 
 
 $bodyFont: 'Helvetica', 'Arial', 'Sans-Serif';
@@ -35,6 +37,11 @@ footer {
   font-size: .8em;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 nav ul, footer ul {
     padding: 0px;
     list-style: none;
@@ -44,6 +51,11 @@ nav ul, footer ul {
       display: inline;
       margin-right: 20px;
     }
+}
+
+.theme-swap {
+  display: inline;
+  margin-right: 20px;
 }
 
 a {
