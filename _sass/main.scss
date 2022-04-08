@@ -172,7 +172,22 @@ a {
       color: var(--text-color);
     }
   }
+}
 
+.quote {
+  font-style: italic; 
+  // color: var(--link-color);
+}
+
+.quote-inner {
+  padding: 2rem;
+  padding-bottom: 0.1rem;
+  display: inline-block;
+}
+
+.quote-author {
+  padding-right: 40%;
+  text-align: end;
 }
 
 @media screen and (min-width: 72em ) {

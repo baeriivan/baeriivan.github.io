@@ -2,15 +2,49 @@
 layout: default
 title: Home
 ---
+<h1> {{ page.title }} </h1>
 
-{% include under_construction.html %}
+<div class="container">
+	<section class="about-overview">
+		<img src="/assets/images/portfolio.png"
+		alt="me son and nature"
+		width="300">
+		<div id="about-name">Ivan Baeriswyl</div>
+		<div id="about-titles">Software Engineer, Vimer, Dad</div>
+		{% include social.html %}
+	</section>
+	<section class="about-content">
 
 
+		<p>
+		Hi ! My name is Ivan (<a
+			href="https://www.internationalphoneticalphabet.org/">&#618;v&#652;n not
+			&#618;vɑ̃</a>).
+		</p>
 
-<p>
-Dictum at tempor commodo ullamcorper a lacus vestibulum sed. Feugiat pretium nibh ipsum consequat. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Sollicitudin ac orci phasellus egestas tellus. Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc. Purus sit amet volutpat consequat mauris nunc. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis. Senectus et netus et malesuada fames ac. Eu non diam phasellus vestibulum lorem. Mauris pharetra et ultrices neque. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Egestas maecenas pharetra convallis posuere morbi leo. Nisl condimentum id venenatis a. Condimentum vitae sapien pellentesque habitant morbi tristique. In cursus turpis massa tincidunt. Tristique risus nec feugiat in.
-</p>
+		<p>
+		I am a Linux enthusiast, a vim/neovim advocate, a software engineer, and a
+		long-time go player.
+		</p>
 
-<p>
-Ultrices eros in cursus turpis. Lobortis feugiat vivamus at augue eget arcu. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer. In cursus turpis massa tincidunt dui. Nec nam aliquam sem et tortor consequat id porta nibh. Morbi blandit cursus risus at ultrices. Orci sagittis eu volutpat odio. Sed velit dignissim sodales ut eu. Eget nunc scelerisque viverra mauris in aliquam sem fringilla ut. Est lorem ipsum dolor sit amet consectetur. Posuere morbi leo urna molestie at elementum eu facilisis. Elementum eu facilisis sed odio morbi quis commodo odio. Sapien nec sagittis aliquam malesuada bibendum arcu vitae.
-</p>
+		<p>
+		I think that I like the concept of learning languages and random discussion
+		about them; more than I actually like learning them. Proof of that might be
+		my list of languages to learn, never getting short of a single one. 
+		</p>
+
+    <div class="quote">
+      <div class="quote-inner">
+        <i class="fa-solid fa-quote-left"></i>&nbsp;
+        <span id="home-quote"></span>&nbsp;
+        <i class="fa-solid fa-quote-right"></i>
+      </div>
+      <div id="home-quote-author" class="quote-author"></div>
+      <!-- <i class="fa-solid fa-pen-nib"></i> -->
+    </div>
+
+	</section>
+</div>
+
+<!-- Ensure this script is generated after this page's DOM -->
+<script src="/assets/js/quotes.js"></script>
