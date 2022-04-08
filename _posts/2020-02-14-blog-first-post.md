@@ -2,6 +2,13 @@
 layout: post
 title: "My blog's first post"
 date: 2020-02-14
+preview: >-
+  Pellentesque elit eget gravida cum
+  sociis.
+  Lectus mauris ultrices eros in cursus turpis massa tincidunt. Fringilla est
+  ullamcorper eget nulla facilisi etiam dignissim diam. Amet consectetur
+  adipiscing elit ut aliquam purus sit amet luctus. Pellentesque habitant morbi
+categories: [me]
 ---
 
 Commodo ullamcorper a lacus vestibulum sed arcu. Aliquet porttitor lacus luctus

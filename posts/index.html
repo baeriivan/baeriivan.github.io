@@ -3,8 +3,15 @@ layout: default
 title: Posts
 ---
 	<h1>{{ page.title }}</h1>
+	{% for category in site.categories %}
+	<div>{{ category.title }}</div>
+	{% endfor %}
+
 	<ul class="posts">
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
+		{% for post in site.posts %}
+		<li>
+			<a href="{{ post.url }}" title="{{ post.title }}"><h3>{{ post.title }} [{{ post.categories | join: ', ' }}]</h3></a>
+			<div>{{ post.preview }}</div>
+		</li>
+		{% endfor %}
 	</ul>
