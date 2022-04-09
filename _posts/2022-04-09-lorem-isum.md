@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "Mock post"
-date: 2022-04-05
+title: "Lorem ipsum"
+date: 2022-04-09
 preview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua."
-categories: [linux]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
