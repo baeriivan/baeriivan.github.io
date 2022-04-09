@@ -189,6 +189,16 @@ a {
   text-align: end;
 }
 
+.bottom-btn {
+  display: flex;
+  justify-content: center;
+
+  a {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
 @media screen and (min-width: 72em ) {
 
   .container { 

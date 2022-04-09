@@ -10,7 +10,11 @@ title: Posts
 	<ul class="posts">
 		{% for post in site.posts %}
 		<li>
-			<a href="{{ post.url }}" title="{{ post.title }}"><h3>{{ post.title }} [{{ post.categories | join: ', ' }}]</h3></a>
+			<a href="{{ post.url }}" title="{{ post.title }}"><h3>{{ post.title }}
+          {% if post.categories.size > 0 %}
+          [ {{ post.categories | join: ', ' }} ]
+          {% endif %}
+        </h3></a>
 			<div>{{ post.preview }}</div>
 		</li>
 		{% endfor %}
